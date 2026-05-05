@@ -528,14 +528,14 @@ const starMult = {1:10,2:5,3:3,4:2,5:2,6:1.5,7:1.5,8:1,9:1,10:1,11:1,12:1};
 // ── Prize table ──────────────────────────────────────────────────────────────
 const PRIZES = {
   6: { label: '🏆 JACKPOT',     amount: 50_000_000, odds: '1 in 13,983,816' },
-  5: { label: '💎 PLATINUM',    amount: 1_000_000,  odds: '1 in 55,491' },
-  4: { label: '🥇 GOLD',        amount: 50_000,     odds: '1 in 1,032' },
-  3: { label: '🥈 SILVER',      amount: 1_500,      odds: '1 in 57' },
-  2: { label: '🥉 BRONZE',      amount: 150,        odds: '1 in 8' },
+  5: { label: '💎 PLATINUM',    amount: 17_000_000,  odds: '1 in 55,491' },
+  4: { label: '🥇 GOLD',        amount: 2_000_000,     odds: '1 in 1,032' },
+  3: { label: '🥈 SILVER',      amount: 400_500,      odds: '1 in 57' },
+  2: { label: '🥉 BRONZE',      amount: 44_000,        odds: '1 in 8' },
   1: { label: '🎟 Free Ticket', amount: 0,          odds: '1 in 2.4' },
   0: { label: '💀 No Match',    amount: 0,          odds: '~1 in 1' },
 };
-const TICKET_COST = 20_000;
+const TICKET_COST = 10_000;
 
 function checkPrize(ticket, draw) {
   const matches = ticket.filter(n => draw.includes(n)).length;
